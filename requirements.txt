@@ -1,0 +1,57 @@
+# Sistema de Citas - Requerimientos
+
+## Versiones de software necesarias:
+- Node.js: v14.x o superior
+- npm: v6.x o superior
+- MySQL: v8.x
+
+## Comandos para ejecutar el programa:
+
+1. Instalar dependencias:
+   ```
+   npm install
+   ```
+
+2. Configurar la base de datos:
+   - Asegúrate de tener MySQL instalado y corriendo.
+   - Crea una base de datos llamada 'citas_db'.
+   - Configura las credenciales en el archivo .env (ya está hecho en este caso).
+
+3. Ejecutar migraciones de Prisma:
+   ```
+   npx prisma migrate dev
+   ```
+
+4. Generar el cliente de Prisma:
+   ```
+   npx prisma generate
+   ```
+
+5. Ejecutar el servidor de desarrollo:
+   ```
+   npm run dev
+   ```
+
+6. Acceder a la aplicación:
+   Abre un navegador y visita: http://localhost:3000
+
+Nota: Asegúrate de que el puerto 3000 esté disponible en tu sistema.
+
+## Comandos adicionales:
+
+- Para construir la aplicación para producción:
+  ```
+  npm run build
+  ```
+
+- Para iniciar la aplicación en modo producción:
+  ```
+  npm start
+  ```
+
+- Para ejecutar el linter:
+  ```
+  npm run lint
+  ```
+
+Recuerda mantener actualizado el archivo .env con las credenciales correctas de la base de datos y las variables de entorno necesarias.
